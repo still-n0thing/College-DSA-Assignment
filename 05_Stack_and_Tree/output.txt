@@ -1,0 +1,11 @@
+inorder : H D P L A Z C E 
+postorder : H P L D E C Z A 
+preorder : A D H L P Z C E 
+└──A
+    ├──D
+    │   ├──H
+    │   └──L
+    │       ├──P
+    └──Z
+        └──C
+            └──E

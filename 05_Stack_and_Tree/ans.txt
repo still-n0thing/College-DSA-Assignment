@@ -1,0 +1,12 @@
+01) 
+Postfix : AB+CD+*
+Prefix : *+AB+CD
+
+02)
+Post : HABC+D*+F*G**J+
+Pre : +*H***+A*+BCDFGEJ
+
+
+05)
+2 3 7 6 7 9 13 15 17 18 20
+

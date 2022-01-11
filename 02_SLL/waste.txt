@@ -1,0 +1,32 @@
+Node * del(int regno){
+        Node * op;
+        Node * itr = head;
+        if(head->data.regno == regno){
+            // Null(A) -> B -> C
+            //  \-------------/
+            op = head;
+            head->next
+        } else {
+            while(itr != nullptr){
+                bool flag = false;
+                if(itr->next->data.regno == regno){
+                    flag = true;
+                    break;
+                }
+            }
+            if(flag){
+                // A : itr
+                // B : d_node 
+                // C : nxt
+                Node * d_node = itr->next;
+                Node * nxt = d_node->next;
+                // A -> B -> C
+                // \--------/
+                
+                // A -> B -> Null(C)
+                //  \--------/
+            } else {
+                return nullptr;
+            }
+        }
+    }

@@ -1,0 +1,19 @@
+INPUT LIST : 
+10 20 30 40 50 60 70 80 90 
+
+QUERY : Delete 30
+UPDATED LIST : 
+10 20 40 50 60 70 80 90 
+
+QUERY : Insert 30 to 7 position
+UPDATED LIST : 
+10 20 40 50 60 70 30 80 90 
+
+QUERY : Insert 80 to 2 position
+UPDATED LIST : 
+10 80 20 40 50 60 70 30 80 90 
+
+QUERY : Delete last element
+UPDATED LIST : 
+10 80 20 40 50 60 70 30 80 
+

@@ -1,0 +1,7 @@
+	---Options---
+1) Adding element to the list
+2) Removing element form the list
+3) Printing all the items in the list
+Any other number to quit
+
+Type your choice here : 
