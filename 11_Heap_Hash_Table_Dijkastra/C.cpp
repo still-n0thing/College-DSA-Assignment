@@ -14,41 +14,62 @@ using namespace std;
 class HashTable {
 public:
     int size, n;
-    vector<int> arr;
+    vector<int> table;
 
     HashTable(int sz){
         n = sz;
         size = 0;;
-        arr.assign(n, -1LL);
+        table.assign(n, -1LL);
     }
 
     inline int h(int x){
         return (x % n);
     }
 
-    int& operator[](int idx){
-        // INCOMPLETE
-        int y = n;
-        int i = h(idx); 
-        while(n > 0){
-
+    void insert(int key){
+        int val = h(key);
+        int lp = n;
+        while(lp--){
+            if(table[val] == -1){
+                table[val] = key;
+                size++;
+                return;
+            }
+            val = (val + 1) % n;
         }
+        cerr << "table is full\n";
+    }
+
+    int get(int key){
+        int val = h(key);
+        int lp = n;
+        while(lp--){
+            if(table[val] == key){
+                return val;
+            }
+            val = (val + 1) % n;
+        }
+        cerr << "value not in table\n";
+        return INT32_MAX;
     }
 };
 
 void solve(){
-    
+    vector<int> a = {
+        1234, 6236, 9123, 2326, 3214, 4355
+    };
+    HashTable ht(10);
+    for(auto & i : a){
+        ht.insert(i);
+    }
+    for(auto & i : a){
+        cout << "value = [" << i << "] : index = [" << ht.get(i) << "]\n"; 
+    }
 }   
 
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-
-#ifdef LOCAL
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    freopen("error.txt", "w", stderr);
-#endif
 
     int T = 1;
     // cin >> T; 

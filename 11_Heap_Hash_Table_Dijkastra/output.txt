@@ -1,4 +1,6 @@
-arr : 15 19 10 7 17 16 20 28 3 14 
-
-After Sorting
-arr : 3 7 10 14 15 16 17 19 20 28 
+value = [1234] : index = [4]
+value = [6236] : index = [6]
+value = [9123] : index = [3]
+value = [2326] : index = [7]
+value = [3214] : index = [5]
+value = [4355] : index = [8]

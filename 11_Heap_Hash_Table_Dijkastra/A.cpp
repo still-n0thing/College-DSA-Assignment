@@ -96,12 +96,6 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-#ifdef LOCAL
-    freopen("input.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    freopen("error.txt", "w", stderr);
-#endif
-
     int T = 1;
     // cin >> T; 
     for(int tc = 1; tc <= T; tc++){
